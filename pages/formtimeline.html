@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Us</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; line-height: 1.6; color: black;">
+
+  <!-- HEADER -->
+  <header style="background: #111; color: white; text-align: center; padding: 40px 20px;">
+    <h1>4 Sekawan</h1>
+    <nav aria-label="Main Navigation" style="margin-top: 15px;">
+      <a aria-current="page" style="text-decoration: none; color: white;">Hire Me!</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main style="margin: 0 auto; max-width: 900px; padding: 40px 20px;">
+
+    <h2 style="text-align: center; color: cornflowerblue;">Project Request Form</h2>
+    <p style="text-align: center; max-width: 700px; margin: 10px auto;">
+      Fill out this form to tell us more about your website idea, goals, and expectations.
+    </p>
+
+    <!-- INTERNAL SECTION NAV -->
+    <nav aria-label="Page Sections" style="text-align: center; margin-bottom: 40px;">
+      <a href="#timeline-info" style="text-decoration: none; color: black;">Timeline and Expectations</a>
+    </nav>
+
+    <form action="#" method="GET" style="max-width: 900px; margin: 40px auto; padding: 20px;">     
+
+      <section id="timeline-info">
+        <fieldset style="padding: 20px; margin-bottom: 30px;">
+          <legend style="color:black;"><strong>Timeline and Expectations</strong></legend>
+
+          <label for="start-date" style="margin-top: 10px;">Expected Start Date:</label><br>
+          <input type="date" id="start-date" name="start-date" required style="padding: 8px; width: 800px;"><br><br>
+
+          <label for="duration" style="margin-top: 10px;">Estimated Duration (weeks):</label><br>
+          <input type="number" id="duration" name="duration" min="1" max="52" placeholder="e.g. 4" required style="padding: 8px; width: 800px;"><br><br>
+
+          <label>Preferred Work Mode:</label><br>
+          <input type="checkbox" id="remote" name="mode" value="remote">
+          <label for="remote">Remote</label>
+          <input type="checkbox" id="onsite" name="mode" value="onsite">
+          <label for="onsite">Onsite</label>
+          <input type="checkbox" id="hybrid" name="mode" value="hybrid">
+          <label for="hybrid">Hybrid</label><br><br>
+
+          <label>Find your needs</label><br>
+              <select id="service" name="Service">
+                <option value="Zahra |FrontEnd">Zahra Front end Eng</option>
+                <option value="Bagus|BackEnd">Bagus Back end Eng</option>
+                <option value="Bagas |UI&UX">Bagas |UI&UX</option>
+                
+              </select>
+                    
+        </fieldset>
+      </section>
+
+      <div style="text-align: center;">
+        <button type="submit" style="background: cornflowerblue; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+          Submit Request
+        </button>
+        <input type="reset" value="Reset Form" style="margin-left: 10px; background: #ddd; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+      </div>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background: black; color: white; text-align: center; padding: 20px;">
+    <a href="https://www.linkedin.com/in/erlandazakaria" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/linkedin.png" height="24" width="24" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/erlandazakaria" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/github.png" height="24" width="24" alt="GitHub">
+    </a>
+    <a href="https://instagram.com/erlandazakaria" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/instagram.png" height="24" width="24" alt="Instagram">
+    </a>
+    <h4 style="margin-top: 5px;">© 2025 4 Sekawan</h4>
+  </footer>
+
+</body>
+</html>
