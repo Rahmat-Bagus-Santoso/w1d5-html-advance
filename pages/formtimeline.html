@@ -31,7 +31,32 @@
       <a href="#timeline-info" style="text-decoration: none; color: black;">Timeline and Expectations</a>
     </nav>
 
-    <form action="#" method="GET" style="max-width: 900px; margin: 40px auto; padding: 20px;">     
+    <form action="#" method="GET" style="max-width: 900px; margin: 40px auto; padding: 20px;">
+      <section id="project-details">
+        <fieldset style="padding: 20px; margin-bottom: 30px;">
+          <legend><strong>Project Details</strong></legend>
+          <label for="web-type" style="margin-top: 10px;">What Type of website do you want to build?</label>
+          <select id="web-type" name="web-type">
+            <option value="">-- Choose one--</option>
+            <option value="portofolio">Portofolio</option>
+            <option value="bussiness">Bussiness</option>
+            <option value="ecommerce">E-Commerce</option>
+            <option value="blog">Blog</option>
+            <option value="custom">Custom Web App</option>
+          </select><br /><br />
+          <p>Do you already have design materials?</p>
+          <input type="radio" id="yes" name="design" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="design" value="no">
+          <label for="no">No</label><br /><br />
+          <label for="goals" style="margin-top: 15px;">Project Goals :</label>
+          <textarea id="goals" name="goals" rows="4" placeholder="Describe what you want to achieve..." required style="width: 800px; padding: 5px;">
+          </textarea>
+          <label for="reference" style="margin-top: 10px;">Upload a Refference Image :</label>
+          <input type="file" id="reference" name="reference"><br />
+        </fieldset>
+
+      </section>     
 
       <section id="timeline-info">
         <fieldset style="padding: 20px; margin-bottom: 30px;">
