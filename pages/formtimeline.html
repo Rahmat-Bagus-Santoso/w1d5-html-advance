@@ -8,30 +8,49 @@
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; line-height: 1.6; color: black;">
 
   <!-- HEADER -->
-  <header style="background: #111; color: white; text-align: center; padding: 40px 20px;">
+  <header style="background: #111; color: white; text-align: center; padding: 20px 20px; font-family: Arial, sans-serif;">
     <h1>4 Sekawan</h1>
-    <nav aria-label="Main Navigation" style="margin-top: 15px;">
+    <nav aria-label="Main Navigation" style="margin-top: 10px;font-family: 'Courier New', Courier, monospace; font-size: 18px;">
       <a aria-current="page" href="../index.html" class="current" style=" text-decoration: none; margin: 0 15px; color: white; font-weight: bold;">Home</a>
       <span style="margin-right: 10px;margin-left: 10px;">|</span>
-      <a aria-current="page" href="#" style="text-decoration: none; color: white;">Hire Me!</a>
+      <a aria-current="page" href="#" style="text-decoration: none; color: white;">Work with us!</a>
       <span style="margin-right: 10px; margin-left: 10px;"></span>
     </nav>
   </header>
 
   <!-- MAIN -->
-  <main style="margin: 0 auto; max-width: 900px; padding: 40px 20px;">
+  <main style="margin: 0 auto; max-width: 800px 100%; padding: 40px 20px;">
 
-    <h2 style="text-align: center; color: cornflowerblue;">Project Request Form</h2>
+    <h2 style="text-align: center; color: cornflowerblue; margin-top: 0;">Project Request Form</h2>
     <p style="text-align: center; max-width: 700px; margin: 10px auto;">
       Fill out this form to tell us more about your website idea, goals, and expectations.
     </p>
 
     <!-- INTERNAL SECTION NAV -->
     <nav aria-label="Page Sections" style="text-align: center; margin-bottom: 40px;">
-      <a href="#timeline-info" style="text-decoration: none; color: black;">Timeline and Expectations</a>
+      <a href="#personal-details" style="text-decoration: none; color: black; font-weight: bold;">Personal Details</a>
+      <span style="margin-right: 10px; margin-left: 10px;">|</span>
+      <a href="#project-details" style="text-decoration: none; color: black; font-weight: bold;">Project Details</a>
+      <span style="margin-right: 10px; margin-left: 10px;">|</span>
+      <a href="#timeline-info" style="text-decoration: none; color: black; font-weight: bold;">Timeline and Expectations</a>
     </nav>
 
-    <form action="#" method="GET" style="max-width: 900px; margin: 40px auto; padding: 20px;">
+    <form action="#" method="GET" style="max-width: 100%; margin: 40px auto; padding: 20px;">
+      <section id="personal-details">
+        <fieldset style="padding: 20px 20px; margin-bottom: 30px;">
+          <legend><strong>Personal Details</strong></legend>
+
+          <label for="full-name" style="margin-top: 10px;">Full Name:</label><br>
+          <input type="text" id="full-name" name="full-name" placeholder="please enter your full name" required style="padding: 8px; width: 100%;"><br><br>
+
+          <label for="email" style="margin-top: 10px;">Email Address:</label><br>
+          <input type="email" id="email" name="email" placeholder="example@example.com" required style="padding: 8px; width: 100%;"><br><br>
+
+          <label for="phone" style="margin-top: 10px;">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="Your phone number" required style="padding: 8px; width: 100%;"><br><br>
+        </fieldset>
+      </section>
+
       <section id="project-details">
         <fieldset style="padding: 20px; margin-bottom: 30px;">
           <legend><strong>Project Details</strong></legend>
@@ -50,12 +69,11 @@
           <input type="radio" id="no" name="design" value="no">
           <label for="no">No</label><br /><br />
           <label for="goals" style="margin-top: 15px;">Project Goals :</label>
-          <textarea id="goals" name="goals" rows="4" placeholder="Describe what you want to achieve..." required style="width: 800px; padding: 5px;">
+          <textarea id="goals" name="goals" rows="4" placeholder="Describe what you want to achieve..." required style="width: 100%; padding: 5px;">
           </textarea>
           <label for="reference" style="margin-top: 10px;">Upload a Refference Image :</label>
           <input type="file" id="reference" name="reference"><br />
         </fieldset>
-
       </section>     
 
       <section id="timeline-info">
@@ -63,10 +81,10 @@
           <legend style="color:black;"><strong>Timeline and Expectations</strong></legend>
 
           <label for="start-date" style="margin-top: 10px;">Expected Start Date:</label><br>
-          <input type="date" id="start-date" name="start-date" required style="padding: 8px; width: 800px;"><br><br>
+          <input type="date" id="start-date" name="start-date" required style="padding: 8px; width: 100%;"><br><br>
 
           <label for="duration" style="margin-top: 10px;">Estimated Duration (weeks):</label><br>
-          <input type="number" id="duration" name="duration" min="1" max="52" placeholder="e.g. 4" required style="padding: 8px; width: 800px;"><br><br>
+          <input type="number" id="duration" name="duration" min="1" max="52" placeholder="e.g. 4" required style="padding: 8px; width: 100%;"><br><br>
 
           <label>Preferred Work Mode:</label><br>
           <input type="checkbox" id="remote" name="mode" value="remote">
@@ -78,10 +96,9 @@
 
           <label>Find your needs</label><br>
               <select id="service" name="Service">
-                <option value="Zahra |FrontEnd">Zahra Front end Eng</option>
-                <option value="Bagus|BackEnd">Bagus Back end Eng</option>
-                <option value="Bagas |UI&UX">Bagas |UI&UX</option>
-                
+                <option value="Zahra |FrontEnd">Zahra | FrontEnd</option>
+                <option value="Bagus |BackEnd">Bagus | BackEnd</option>
+                <option value="Bagas |UI&UX">Bagas | UI&UX</option>
               </select>
                     
         </fieldset>
