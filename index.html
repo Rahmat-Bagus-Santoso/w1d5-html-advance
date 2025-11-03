@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
 </head>
-<body style="line-height: 1.7; background-color: antiquewhite; color: darkgray; margin: 40px auto; padding: 0 20px;">
-    <!-- Header -->
-    <header>
-        <h1>Breakout Room 8</h1>
-        <nav>
-            <a href="#bagas">Bagas Aditya Fadly</a>
-            <a href="#zahra">Zahratunnisa</a>
-            <a href="#bagus">Rahmat Bagus</a>
-            <a href="#bagusaji">Bagus Aji</a>
-            <a href="">Form</a>
-        </nav>
-        <!-- Main Content -->
-        <main>
-            <section id="bagas">
-                <h2>Hai, I'm Bagas Aditya Fadly</h2>
-                <p>Saya adalah salah satu anggota FSSE RevoU 2025.</p>
-                <span>klik <a href="./pages/bagas.html">disini</a> untuk profil saya</span>
-            </section>
 
+<body style="max-width: 100%; margin: 0; line-height: 1.7; background-color: antiquewhite; color: rgb(0, 0, 0); padding: 0;">
+    
+    <!-- Header -->
+    <header style=" padding: 20px; background: rgb(0, 0, 0); color: white; text-align: center; margin-bottom: 40px;">
+        <h1>Breakout Room 8</h1>
+        <nav aria-label="Main Navigation" style="margin-top: 10px; text-align: center;">
+            <a href="#bagas" style="text-decoration: none; color: white; margin: 0 15px;">Bagas Aditya Fadly</a>
+            <a href="#zahra" style="text-decoration: none; color: white; margin: 0 15px;">Zahratunnisa</a>
+            <a href="#bagus" style="text-decoration: none; color: white; margin: 0 15px;">Rahmat Bagus</a>
+            <a href="#bagusaji" style="text-decoration: none; color: white; margin: 0 15px;">Bagus Aji</a>
+            <a href="" style="text-decoration: none; color: white; margin: 0 15px;">Form</a>
+        </nav>
+    </header>
+
+        <!-- Main Content -->
+        <main style="padding: 0 20px; max-width: 900px; width: 100%; margin: auto;">
+            <section id="bagas" style="flex:1; display:flex; padding:20px; gap:20px;">
+                <aside class="left">
+                    <img src="../assets/bagas.png" style="width: 200px; height: 200px; border-radius: 20%; object-fit: cover; object-position: center;" alt="Bagas Aditya Fadly">
+                </aside>
+                <article class="right">
+                <h2>Hai, I'm Bagas Aditya Fadly</h2>
+                <p>Saya adalah salah satu anggota FSSE RevoU 2025. Saat ini sedang mengerjakan proyek pembuatan website menggunakan HTML dan ellaborate dengan teman teman yang lain.</p>
+                <p>Untuk mengetahui lebih detail tentang saya, silahkan klik <a href="./pages/bagas.html"> link disini</a>.</div></p>
+                </article>
+            </section>
+               
             <section id="zahra">
                 <h2>Hai, I'm Zahratunnisa</h2>
                 <p>Saya adalah salah satu anggota FSSE RevoU 2025.</p>
@@ -44,9 +53,10 @@
         </main>
 
         <!-- Footer -->
-        <footer>
+        <footer style="background-color: black; color: white; padding: 20px; text-align: center; margin-top: 40px;">
             <p>&copy; breakout team 8 2025 Full-Stack Software Engineering</p>
         </footer>
-    </header>
+    
 </body>
+
 </html>
